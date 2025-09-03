@@ -1,3 +1,5 @@
+//go:generate go run github.com/syumai/workers/cmd/workers-assets-gen -mode=go
+//go:generate env GOOS=js GOARCH=wasm go build -o ./build/app.wasm .
 package main
 
 import (
